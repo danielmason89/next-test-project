@@ -1,9 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <nav>
-      <div className="logo">
+      <div className="logo heading-logo">
+        <Image
+          width={100}
+          height={70}
+          backgroundColor={"white"}
+          src="/images.png"
+          alt="Pikachu"
+        />
         <h1>Pokemon List</h1>
       </div>
       <Link href="/">
