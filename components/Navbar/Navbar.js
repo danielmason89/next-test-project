@@ -8,7 +8,7 @@ const Navbar = () => {
         <Image
           width={100}
           height={70}
-          backgroundColor={"white"}
+          backgroundcolor={"white"}
           src="/images.png"
           alt="Pikachu"
         />

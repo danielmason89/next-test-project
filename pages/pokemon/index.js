@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Pokemon.module.css";
 
 export const getStaticProps = async () => {
@@ -13,11 +14,11 @@ const Pokemon = ({ pokemon }) => {
     <div>
       <h1>All Pokemon</h1>
       {pokemon.map((poke) => (
-        <div key={poke.id}>
+        <Link href={"/pokemon/" + poke.id} key={poke.id}>
           <a className={styles.single}>
             <h3>{poke.name}</h3>
           </a>
-        </div>
+        </Link>
       ))}
     </div>
   );
