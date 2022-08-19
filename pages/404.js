@@ -8,13 +8,13 @@ const NotFound = () => {
     setTimeout(() => {
       router.push("/");
     }, 1000);
-  }, []);
+  }, [router]);
   return (
     <div className="not-found">
       <h1>Oops....</h1>
-      <h2>That page doesn't exists</h2>
+      <h2>That page does not exists</h2>
       <p>
-        Go back to the{" "}
+        Go back to the
         <Link href="/">
           <a>Homepage</a>
         </Link>

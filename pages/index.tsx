@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Pokemon List | Home</title>
-        <meta /> name="keywords" content="pokemon"
+        <meta name="keywords" content="pokemon" />
       </Head>
       <div>
         <h1 className={styles.title}>Homepage</h1>
